@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Text } from "./styles";
 
-interface IProductDetailText {
+export interface IProductDetailText {
   keys: string;
   children: React.ReactNode;
 }

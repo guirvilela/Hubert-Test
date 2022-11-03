@@ -9,6 +9,8 @@ import { ClearSearch, Container, ProductTable, SearchContent } from "./styles";
 
 export const Home: React.FC = () => {
   const [products, setProducts] = useState<IProduct[]>([]);
+  const [updateProducts, setUpdateProducts] = useState<IProduct[]>([]);
+  const [search, setSearch] = useState<string>("");
 
   useEffect(() => {
     loadAllProducts();
@@ -17,6 +19,30 @@ export const Home: React.FC = () => {
   const loadAllProducts = async () => {
     const data = await loadAllProductsTable();
     setProducts(data);
+    setUpdateProducts(data);
+  };
+
+  const handleSearchTable = (text: string) => {
+    setSearch(text);
+
+    if (text) {
+      const filtered = updateProducts.filter((str) =>
+        str.product.toLowerCase().includes(text.toLowerCase())
+      );
+
+      if (filtered) {
+        setProducts(filtered);
+      } else {
+        setUpdateProducts(updateProducts);
+      }
+    } else {
+      loadAllProducts();
+    }
+  };
+
+  const handleClearSearch = () => {
+    loadAllProducts();
+    setSearch("");
   };
 
   return (
@@ -24,8 +50,11 @@ export const Home: React.FC = () => {
       <HistoryPages />
 
       <SearchContent>
-        <InputSearch />
-        <ClearSearch>Limpar busca</ClearSearch>
+        <InputSearch
+          value={search}
+          onChange={(e) => handleSearchTable(e.target.value)}
+        />
+        <ClearSearch onClick={handleClearSearch}>Limpar busca</ClearSearch>
       </SearchContent>
 
       <ProductTable>

@@ -1,12 +1,14 @@
-import React from "react";
+import React, { HTMLProps } from "react";
 import { Container, Input, InputIcon } from "./styles";
 import { AiOutlineSearch } from "react-icons/ai";
 import theme from "../../theme";
 
-export const InputSearch: React.FC = () => {
+export const InputSearch: React.FC<HTMLProps<HTMLInputElement>> = ({
+  ...rest
+}) => {
   return (
     <Container>
-      <Input placeholder="Digite uma palavra chave" />
+      <Input placeholder="Digite o produto" {...rest} />
       <InputIcon>
         <AiOutlineSearch size={24} color={theme.colors.blue_500} />
       </InputIcon>

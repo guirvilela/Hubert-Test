@@ -5,11 +5,11 @@ import { productCategories } from "../../services/categories";
 import { formatCurrency } from "../../services/formatCurrency";
 import { BodyCells, BodyTable, Container, Dots, HeaderCells } from "./styles";
 
-interface ITableProps {
+export interface ITable {
   data: IProduct[];
 }
 
-export const Table: React.FC<ITableProps> = ({ data }) => {
+export const Table: React.FC<ITable> = ({ data }) => {
   const navigate = useNavigate();
 
   return (
