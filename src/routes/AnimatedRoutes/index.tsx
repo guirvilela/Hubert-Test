@@ -3,7 +3,6 @@ import { Route, Routes, useLocation } from "react-router-dom";
 
 import { Home } from "../../pages/Home";
 import { Details } from "../../pages/Details";
-import { HistoryPages } from "../../components/HistoryPages";
 
 export const AnimatedRoutes: React.FC = () => {
   const location = useLocation();

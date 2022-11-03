@@ -2,14 +2,12 @@ import React from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { Container, Page, Arrow } from "./styles";
 
-interface HistoryPages {
+export interface IHistoryPages {
   product?: string;
-  active?: boolean;
 }
 
-export const HistoryPages: React.FC<HistoryPages> = ({ product, active }) => {
+export const HistoryPages: React.FC<IHistoryPages> = ({ product }) => {
   const navigate = useNavigate();
-  const route = useLocation();
 
   const handleNavigate = () => {
     navigate("/");
@@ -17,7 +15,7 @@ export const HistoryPages: React.FC<HistoryPages> = ({ product, active }) => {
 
   return (
     <Container>
-      <Page>Home</Page>
+      <Page onClick={handleNavigate}>Home</Page>
       <Arrow />
       <Page active={!product} onClick={handleNavigate}>
         Produtos

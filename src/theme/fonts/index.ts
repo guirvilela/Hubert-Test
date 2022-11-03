@@ -6,4 +6,5 @@ export const nunitoFonts = {
   //16px
   small_400: "400 16px 'Nunito', sans-serif",
   small_600: "600 16px 'Nunito', sans-serif",
+  small_700: "700 16px 'Nunito', sans-serif",
 };

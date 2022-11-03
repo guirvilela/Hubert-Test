@@ -1,11 +1,11 @@
 import { Meta, StoryObj } from "@storybook/react";
-import { Loading } from ".";
+import { ButtonBack } from ".";
 
 export default {
-  title: "Components/Loading",
-  component: Loading,
+  title: "Components/ButtonBack",
+  component: ButtonBack,
   args: {
-    isFilled: true,
+    children: "Voltar",
   },
 } as Meta;
 
