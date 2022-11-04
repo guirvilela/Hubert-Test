@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="15" failures="0" errors="0" time="6.224">
+  <testsuite name="InputSearch component" errors="0" failures="0" skipped="0" timestamp="2022-11-04T15:22:04" time="4.381" tests="2">
+    <testcase classname="InputSearch component Should be able the component render correctly " name="InputSearch component Should be able the component render correctly " time="0.045">
+    </testcase>
+    <testcase classname="InputSearch component Should be able appear the value when write on field" name="InputSearch component Should be able appear the value when write on field" time="0.011">
+    </testcase>
+  </testsuite>
+  <testsuite name="ProductDetailText component" errors="0" failures="0" skipped="0" timestamp="2022-11-04T15:22:04" time="4.441" tests="2">
+    <testcase classname="ProductDetailText component Should be able the component render correctly " name="ProductDetailText component Should be able the component render correctly " time="0.025">
+    </testcase>
+    <testcase classname="ProductDetailText component Should be able text appear correctly when pass props" name="ProductDetailText component Should be able text appear correctly when pass props" time="0.006">
+    </testcase>
+  </testsuite>
+  <testsuite name="HistoryPages component" errors="0" failures="0" skipped="0" timestamp="2022-11-04T15:22:04" time="4.438" tests="4">
+    <testcase classname="HistoryPages component Should be able the component render correctly " name="HistoryPages component Should be able the component render correctly " time="0.031">
+    </testcase>
+    <testcase classname="HistoryPages component Should be able Product text appear with style if not pass props" name="HistoryPages component Should be able Product text appear with style if not pass props" time="0.005">
+    </testcase>
+    <testcase classname="HistoryPages component Should be able appear product name when pass props to component" name="HistoryPages component Should be able appear product name when pass props to component" time="0.009">
+    </testcase>
+    <testcase classname="HistoryPages component Should be able return to first screen when click on back button" name="HistoryPages component Should be able return to first screen when click on back button" time="0.01">
+    </testcase>
+  </testsuite>
+  <testsuite name="ButtonBacl component" errors="0" failures="0" skipped="0" timestamp="2022-11-04T15:22:04" time="4.501" tests="2">
+    <testcase classname="ButtonBacl component Should be able the component render correctly " name="ButtonBacl component Should be able the component render correctly " time="0.022">
+    </testcase>
+    <testcase classname="ButtonBacl component Should be able text appear correctly when pass children" name="ButtonBacl component Should be able text appear correctly when pass children" time="0.005">
+    </testcase>
+  </testsuite>
+  <testsuite name="Table component" errors="0" failures="0" skipped="0" timestamp="2022-11-04T15:22:04" time="5.649" tests="5">
+    <testcase classname="Table component Should be able the component render correctly " name="Table component Should be able the component render correctly " time="0.03">
+    </testcase>
+    <testcase classname="Table component Should be able appear header title table" name="Table component Should be able appear header title table" time="0.017">
+    </testcase>
+    <testcase classname="Table component Should be able to get the data correctly past in props " name="Table component Should be able to get the data correctly past in props " time="0.004">
+    </testcase>
+    <testcase classname="Table component Should be able show data table correctly " name="Table component Should be able show data table correctly " time="0.009">
+    </testcase>
+    <testcase classname="Table component Should be able navigate to detail page of products " name="Table component Should be able navigate to detail page of products " time="0.012">
+    </testcase>
+  </testsuite>
+</testsuites>
