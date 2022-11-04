@@ -1,43 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="15" failures="0" errors="0" time="6.224">
-  <testsuite name="InputSearch component" errors="0" failures="0" skipped="0" timestamp="2022-11-04T15:22:04" time="4.381" tests="2">
-    <testcase classname="InputSearch component Should be able the component render correctly " name="InputSearch component Should be able the component render correctly " time="0.045">
+<testsuites name="jest tests" tests="23" failures="0" errors="0" time="8.002">
+  <testsuite name="ProductDetailText component" errors="0" failures="0" skipped="0" timestamp="2022-11-04T23:28:01" time="5.705" tests="2">
+    <testcase classname="ProductDetailText component Should be able the component render correctly " name="ProductDetailText component Should be able the component render correctly " time="0.038">
     </testcase>
-    <testcase classname="InputSearch component Should be able appear the value when write on field" name="InputSearch component Should be able appear the value when write on field" time="0.011">
-    </testcase>
-  </testsuite>
-  <testsuite name="ProductDetailText component" errors="0" failures="0" skipped="0" timestamp="2022-11-04T15:22:04" time="4.441" tests="2">
-    <testcase classname="ProductDetailText component Should be able the component render correctly " name="ProductDetailText component Should be able the component render correctly " time="0.025">
-    </testcase>
-    <testcase classname="ProductDetailText component Should be able text appear correctly when pass props" name="ProductDetailText component Should be able text appear correctly when pass props" time="0.006">
+    <testcase classname="ProductDetailText component Should be able text appear correctly when pass props" name="ProductDetailText component Should be able text appear correctly when pass props" time="0.007">
     </testcase>
   </testsuite>
-  <testsuite name="HistoryPages component" errors="0" failures="0" skipped="0" timestamp="2022-11-04T15:22:04" time="4.438" tests="4">
-    <testcase classname="HistoryPages component Should be able the component render correctly " name="HistoryPages component Should be able the component render correctly " time="0.031">
+  <testsuite name="Table component" errors="0" failures="0" skipped="0" timestamp="2022-11-04T23:28:01" time="5.658" tests="5">
+    <testcase classname="Table component Should be able the component render correctly " name="Table component Should be able the component render correctly " time="0.058">
     </testcase>
-    <testcase classname="HistoryPages component Should be able Product text appear with style if not pass props" name="HistoryPages component Should be able Product text appear with style if not pass props" time="0.005">
+    <testcase classname="Table component Should be able appear header title table" name="Table component Should be able appear header title table" time="0.022">
     </testcase>
-    <testcase classname="HistoryPages component Should be able appear product name when pass props to component" name="HistoryPages component Should be able appear product name when pass props to component" time="0.009">
+    <testcase classname="Table component Should be able to get the data correctly past in props " name="Table component Should be able to get the data correctly past in props " time="0.009">
     </testcase>
-    <testcase classname="HistoryPages component Should be able return to first screen when click on back button" name="HistoryPages component Should be able return to first screen when click on back button" time="0.01">
+    <testcase classname="Table component Should be able show data table correctly " name="Table component Should be able show data table correctly " time="0.027">
+    </testcase>
+    <testcase classname="Table component Should be able navigate to detail page of products " name="Table component Should be able navigate to detail page of products " time="0.019">
     </testcase>
   </testsuite>
-  <testsuite name="ButtonBacl component" errors="0" failures="0" skipped="0" timestamp="2022-11-04T15:22:04" time="4.501" tests="2">
-    <testcase classname="ButtonBacl component Should be able the component render correctly " name="ButtonBacl component Should be able the component render correctly " time="0.022">
+  <testsuite name="ButtonBacl component" errors="0" failures="0" skipped="0" timestamp="2022-11-04T23:28:01" time="5.817" tests="2">
+    <testcase classname="ButtonBacl component Should be able the component render correctly " name="ButtonBacl component Should be able the component render correctly " time="0.023">
     </testcase>
     <testcase classname="ButtonBacl component Should be able text appear correctly when pass children" name="ButtonBacl component Should be able text appear correctly when pass children" time="0.005">
     </testcase>
   </testsuite>
-  <testsuite name="Table component" errors="0" failures="0" skipped="0" timestamp="2022-11-04T15:22:04" time="5.649" tests="5">
-    <testcase classname="Table component Should be able the component render correctly " name="Table component Should be able the component render correctly " time="0.03">
+  <testsuite name="HistoryPages component" errors="0" failures="0" skipped="0" timestamp="2022-11-04T23:28:01" time="5.832" tests="4">
+    <testcase classname="HistoryPages component Should be able the component render correctly " name="HistoryPages component Should be able the component render correctly " time="0.034">
     </testcase>
-    <testcase classname="Table component Should be able appear header title table" name="Table component Should be able appear header title table" time="0.017">
+    <testcase classname="HistoryPages component Should be able Product text appear with style if not pass props" name="HistoryPages component Should be able Product text appear with style if not pass props" time="0.006">
     </testcase>
-    <testcase classname="Table component Should be able to get the data correctly past in props " name="Table component Should be able to get the data correctly past in props " time="0.004">
+    <testcase classname="HistoryPages component Should be able appear product name when pass props to component" name="HistoryPages component Should be able appear product name when pass props to component" time="0.008">
     </testcase>
-    <testcase classname="Table component Should be able show data table correctly " name="Table component Should be able show data table correctly " time="0.009">
+    <testcase classname="HistoryPages component Should be able return to first screen when click on back button" name="HistoryPages component Should be able return to first screen when click on back button" time="0.009">
     </testcase>
-    <testcase classname="Table component Should be able navigate to detail page of products " name="Table component Should be able navigate to detail page of products " time="0.012">
+  </testsuite>
+  <testsuite name="InputSearch component" errors="0" failures="0" skipped="0" timestamp="2022-11-04T23:28:01" time="5.933" tests="2">
+    <testcase classname="InputSearch component Should be able the component render correctly " name="InputSearch component Should be able the component render correctly " time="0.044">
+    </testcase>
+    <testcase classname="InputSearch component Should be able appear the value when write on field" name="InputSearch component Should be able appear the value when write on field" time="0.01">
+    </testcase>
+  </testsuite>
+  <testsuite name="Table component" errors="0" failures="0" skipped="0" timestamp="2022-11-04T23:28:01" time="6.054" tests="3">
+    <testcase classname="Table component Should be able the component render correctly " name="Table component Should be able the component render correctly " time="0.057">
+    </testcase>
+    <testcase classname="Table component Should be able show all product information" name="Table component Should be able show all product information" time="0.011">
+    </testcase>
+    <testcase classname="Table component Should be able return to first screen when click on back button" name="Table component Should be able return to first screen when click on back button" time="0.011">
+    </testcase>
+  </testsuite>
+  <testsuite name="Table component" errors="0" failures="0" skipped="0" timestamp="2022-11-04T23:28:01" time="7.316" tests="5">
+    <testcase classname="Table component Should be able the component render correctly " name="Table component Should be able the component render correctly " time="0.069">
+    </testcase>
+    <testcase classname="Table component Should be able filter list by product name" name="Table component Should be able filter list by product name" time="0.014">
+    </testcase>
+    <testcase classname="Table component Should be able return initial table if input is not filled" name="Table component Should be able return initial table if input is not filled" time="0.009">
+    </testcase>
+    <testcase classname="Table component Should be able return not found data if filter list by wrong product name" name="Table component Should be able return not found data if filter list by wrong product name" time="0.01">
+    </testcase>
+    <testcase classname="Table component Should be able clean fields" name="Table component Should be able clean fields" time="0.007">
     </testcase>
   </testsuite>
 </testsuites>

@@ -5,13 +5,8 @@ import { ButtonBack } from "../../components/ButtonBack";
 import { HistoryPages } from "../../components/HistoryPages";
 import { ProductDetailText } from "../../components/ProductDetailText";
 import { formatCurrency } from "../../services/formatCurrency";
-import {
-  ButtonContent,
-  Container,
-  ProductInfo,
-  RetangleColor,
-  Title,
-} from "./styles";
+import { Content } from "../../shared/AnimatedContainer";
+import { ButtonContent, ProductInfo, RetangleColor, Title } from "./styles";
 
 export const Details: React.FC = (props) => {
   const { state } = useLocation();
@@ -23,7 +18,7 @@ export const Details: React.FC = (props) => {
   };
 
   return (
-    <Container>
+    <Content>
       <HistoryPages product={detailProduct.product} />
 
       <ProductInfo>
@@ -35,6 +30,9 @@ export const Details: React.FC = (props) => {
         </ProductDetailText>
         <ProductDetailText keys="Material">
           {detailProduct.material}
+        </ProductDetailText>
+        <ProductDetailText keys="Departamento">
+          {detailProduct.department}
         </ProductDetailText>
         <ProductDetailText keys="Cor">
           {detailProduct.color} <RetangleColor color={detailProduct.color} />
@@ -50,6 +48,6 @@ export const Details: React.FC = (props) => {
           <ButtonBack onClick={handleBackToProducts}>Voltar</ButtonBack>
         </ButtonContent>
       </ProductInfo>
-    </Container>
+    </Content>
   );
 };

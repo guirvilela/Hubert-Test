@@ -5,7 +5,13 @@ import { InputSearch } from "../../components/InputSearch";
 import { Loading } from "../../components/Loading";
 import { Table } from "../../components/Table";
 import { loadAllProductsTable } from "../../services/products/LoadAllProductsTable";
-import { ClearSearch, Container, ProductTable, SearchContent } from "./styles";
+import { Content } from "../../shared/AnimatedContainer";
+import {
+  ClearSearch,
+  NotFoundProduct,
+  ProductTable,
+  SearchContent,
+} from "./styles";
 
 export const Home: React.FC = () => {
   const [products, setProducts] = useState<IProduct[]>([]);
@@ -26,14 +32,13 @@ export const Home: React.FC = () => {
     setSearch(text);
 
     if (text) {
-      const filtered = updateProducts.filter((str) =>
-        str.product.toLowerCase().includes(text.toLowerCase())
+      /* istanbul ignore next */
+      const filtered = updateProducts.filter(({ product }) =>
+        product.toLowerCase().includes(text.toLowerCase())
       );
 
       if (filtered) {
         setProducts(filtered);
-      } else {
-        setUpdateProducts(updateProducts);
       }
     } else {
       loadAllProducts();
@@ -45,21 +50,32 @@ export const Home: React.FC = () => {
     setSearch("");
   };
 
+  const loadTableConditions = () => {
+    if (products.length === 0 && !search) {
+      return <Loading />;
+    } else if (products.length === 0 && search) {
+      return <NotFoundProduct>Nenhum produto encontrado!</NotFoundProduct>;
+    } else {
+      /* istanbul ignore next */
+      return <Table data={products} />;
+    }
+  };
+
   return (
-    <Container>
+    <Content>
       <HistoryPages />
 
       <SearchContent>
         <InputSearch
           value={search}
-          onChange={(e) => handleSearchTable(e.target.value)}
+          onChange={(event) =>
+            handleSearchTable((event.target as HTMLInputElement).value)
+          }
         />
         <ClearSearch onClick={handleClearSearch}>Limpar busca</ClearSearch>
       </SearchContent>
 
-      <ProductTable>
-        {products.length === 0 ? <Loading /> : <Table data={products} />}
-      </ProductTable>
-    </Container>
+      <ProductTable>{loadTableConditions()}</ProductTable>
+    </Content>
   );
 };

@@ -2,6 +2,7 @@ import { fireEvent, render, screen } from "@testing-library/react";
 import { ThemeProvider } from "styled-components";
 
 import { InputSearch } from ".";
+import { exampleProduct } from "../../services/exampleProduct";
 import theme from "../../theme";
 
 describe("InputSearch component", () => {

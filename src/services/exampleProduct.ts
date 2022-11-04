@@ -20,3 +20,14 @@ export const exampleProduct = [
     id: "28",
   },
 ];
+
+export const exampleProductDetails = {
+  department: "Health",
+  product: "Elegant Concrete Fish",
+  description:
+    "The slim & simple Maple Gaming Keyboard from Dev Byte comes with a sleek body and 7- Color RGB LED Back-lighting for smart functionality",
+  material: "Bronze",
+  color: "salmon",
+  price: "109.00",
+  id: "27",
+};
