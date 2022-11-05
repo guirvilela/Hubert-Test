@@ -8,7 +8,7 @@ export const InputSearch: React.FC<HTMLProps<HTMLInputElement>> = ({
 }) => {
   return (
     <Container>
-      <Input placeholder="Digite o produto" {...rest} />
+      <Input placeholder="Buscar produto" {...rest} />
       <InputIcon>
         <AiOutlineSearch size={24} color={theme.colors.blue_500} />
       </InputIcon>

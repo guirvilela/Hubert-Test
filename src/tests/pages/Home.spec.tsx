@@ -42,7 +42,7 @@ describe("Table component", () => {
     );
 
     const input = screen.getByPlaceholderText(
-      "Digite o produto"
+      "Buscar produto"
     ) as HTMLInputElement;
 
     fireEvent.change(input, {
@@ -64,7 +64,7 @@ describe("Table component", () => {
     );
 
     const input = screen.getByPlaceholderText(
-      "Digite o produto"
+      "Buscar produto"
     ) as HTMLInputElement;
 
     fireEvent.change(input, {
@@ -90,7 +90,7 @@ describe("Table component", () => {
     );
 
     const input = screen.getByPlaceholderText(
-      "Digite o produto"
+      "Buscar produto"
     ) as HTMLInputElement;
 
     fireEvent.change(input, {
@@ -110,7 +110,7 @@ describe("Table component", () => {
     fireEvent.click(screen.getByText("Limpar busca"));
 
     const input = screen.getByPlaceholderText(
-      "Digite o produto"
+      "Buscar produto"
     ) as HTMLInputElement;
 
     expect(input.value).toBe("");

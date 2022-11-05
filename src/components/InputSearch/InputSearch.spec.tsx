@@ -24,7 +24,7 @@ describe("InputSearch component", () => {
     );
 
     const input = screen.getByPlaceholderText(
-      "Digite o produto"
+      "Buscar produto"
     ) as HTMLInputElement;
 
     fireEvent.change(input, {

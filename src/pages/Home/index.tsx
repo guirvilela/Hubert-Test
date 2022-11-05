@@ -24,6 +24,7 @@ export const Home: React.FC = () => {
 
   const loadAllProducts = async () => {
     const data = await loadAllProductsTable();
+    /* istanbul ignore next */
     setProducts(data);
     setUpdateProducts(data);
   };
