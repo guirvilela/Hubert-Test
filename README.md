@@ -8,7 +8,7 @@ O projeto **Hubert** é uma aplicação web com o propósito de listar os princi
 <h2 align="center">Hubert | Teste-Prático</h2>
 <h3 align="center">
   <a href="#information_source-visão-geral">Visão Geral</a>&nbsp;|&nbsp;
-  <a href="#interrobang-motivo">Motivo</a>&nbsp;|&nbsp;
+  <a href="#interrobang-objetivo">Objetivo</a>&nbsp;|&nbsp;
   <a href="#book-documentação">Documentação</a>&nbsp;|&nbsp;
   <a href="#hammer-testes">Testes</a>&nbsp;|&nbsp;
   <a href="#clock1-scrum">Scrum</a>&nbsp;|&nbsp;
@@ -66,7 +66,7 @@ Além disso,para a construção dessa aplicação foi utilizado os seguintes con
 
 ---
 
-## :interrobang: Motivo
+## :interrobang: Objetivo
 
 Esse teste tem como objetivo, desenvolver as funcionalidades de uma tabela de produtos de um e-comerce, além disso, aplicar animações CSS, responsividade
 das telas, testes unitários, componentes organizados, HTML semântico e recursos do próprio React.
@@ -189,12 +189,26 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias
       yarn test
   ```
   
-  
-
-
 ---
 
 ## :thought_balloon: Depoimento
+
+A experiência de desenvolver o teste para a Hubert foi muito interessante e me senti confiante no decorrer da prática, pois, o exercício propunha a utilização do Javascript, linguagem de progamação da qual já possuo experiência, além de estar dentro do objetivo de carreira que almejo atualmente. Ao executar o que foi indicado, optei primeiramente em observar o layout enviado e separar as cores, fontes, seus tamanhos e espessuras, para então passar para p código em forma de Tema global. Visando manter o padrão da aplicação, configuro as cores e fontes utilizadas em variáveis, que serão aplicadas em todo o projeto, pois, caso algum dia uma nova configuração seja feita, a mudança no código ocorrerá apenas em uma variável que se aplica em todo o projeto, otimizando assim a padronização do código e a sua organização. Finalizada essa etapa de estilização, o foco se torna todos os componentes da aplicação, 
+
+O desenvolvimento deste teste foi interessante pois me senti empolgado com a oportunidade e confiante ao desenvolve-lo por ter bastante expêriencia principalmente com a lógica de programação com Javascript e também por ser o objetivo de carreira que estou buscando atualmente.
+Primeiramente ao pegar um novo projeto, eu observo detalhadamente o layout e separo as cores utilizadas, fontes, tamanho de fontes e espessura. Após isso passo para o código em forma de Tema global, para manter o padrão da aplicação eu configuro as cores e fontes utilizadas em variáveis que serão utilizadas em todo o projeto, pois, caso algum dia uma nova configuração seja feita, a mudança no código será apenas em uma variável, que aplica em todo o projeto. Configurado o tema da aplicação foco em todos componentes da aplicação e passo para o código juntamente fazendo a documentação do mesmo, já configurando futuras funcionalidades. Depois, desenvolvo as páginas principais que serão utilizadas os componentes configurados e separo algumas lógicas em serviços que poderão ser utilziadas também pelo projeto, como as requisições api, formatação de moeda, dados para teste, entre outros. Logo após as páginas esteram prontas inicio os testes.
+
+A escolha de utilizar o framework React, foi por estar famialirizado com o que a ferramenta pode oferecer e toda a estrutura de desenvolvimento de um projeto, além disso, confiante pois meu último projeto desenvolvido foi utilizando o React Native, que está mesmo universo, com poucas mudanças. Como também a escolha de utilizar o Styled Components, foi pela organização que consegue trazer para o HTML, em que prefiro utilziar o CamelCase, para organizar tanto classes, ids, tags, entre outro.
+
+Dificuldade
+As principais dificuldades que tive ao desenvolver o teste foi relacionado aos testes e alguns bugs relacionado aos estilos globais configurados. Sobre os testes estava com dúvida em como testar linhas específicas na qual o coverage estava detectando, como aparecer os dados corretos na tabela. Mas com algumas horas de pesquisa foi solucionado.
+
+Para finalizar. As instruções para rodas o projeto se encontra na sessão <a href="#package-como-baixar-e-executar-o-projeto">Baixar e Executar</a>
+
+
+para nos contar como foi sua experiência em realizar o teste,
+esperamos que você nos conte: as decisões que tomou, como organizou seu código, as funcionalidades e
+instruções de como rodar seu projeto e até as dificuldades e desafios que você teve.
 
 ---
 
