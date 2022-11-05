@@ -13,8 +13,8 @@ O projeto **Hubert** é uma aplicação web com o propósito de listar os princi
   <a href="#hammer-testes">Testes</a>&nbsp;|&nbsp;
   <a href="#seedling-requisitos-mínimos">Requisitos</a>&nbsp;|&nbsp;
   <a href="#rocket-principais-tecnologias-utilizadas">Tecnologias</a>&nbsp;|&nbsp;
-  <a href="#package-como-baixar-e-executar-o-projeto">Baixar e Executar</a>&nbsp;
-   <a href="#thought_balloon-depoimento">Depoimento</a>&nbsp;
+  <a href="#package-como-baixar-e-executar-o-projeto">Baixar e Executar</a>&nbsp;|&nbsp;
+  <a href="#thought_balloon-depoimento">Depoimento</a>&nbsp;
 </h3>
 
 ---
@@ -29,8 +29,8 @@ O projeto **Hubert** é uma aplicação web com o propósito de listar os princi
 
 O projeto proposto pela **Hubert** foi para a participação do processo seletivo para a vaga de Desenvolvedor(a) Front-end Pleno Angular | React. 
 
-Nele, foi possível desenvolver uma aplicação web utilizando a lógica de programação com Typescript, a criação das funcionalidades e estrutura para
-requisições à API da aplicação que foi utilizado Axios para buscar todos os produtos disponíveis do e-comerce.
+Nele, foi desenvolvido uma aplicação web utilizando a lógica de programação com Typescript, a criação das funcionalidades e estrutura para
+requisições à API da aplicação, que para isso foi utilizado o Axios para buscar todos os produtos disponíveis do e-comerce.
 
 
 
@@ -83,19 +83,31 @@ Assim, nesse projeto é possível:
 
 ## :book: Documentação
 
- Para este teste foi utilizado a documentação pelo Storybook para facilitar a visualização dos componentes totalmente separados dos outros e do próprio código, porém mantendo estilos e animações CSS. Além disso é possivel observar todas as propriedades que deverão ser passadas ou não, para aquele componente funcionar.
+Para este teste foi utilizado a documentação pelo Storybook para facilitar a visualização dos componentes totalmente separados dos outros e do próprio código, porém mantendo estilos e animações CSS. Além disso é possivel observar todas as propriedades que deverão ser passadas ou não, para aquele componente funcionar.
  
  <div align="center" >
   <img src="https://i.imgur.com/w9sTviZ.png" width="560">
 </div>
 
-Segue abaixo o vídeo completo da documentação feita para o teste *Hubert*
+---
+Segue abaixo o vídeo completo da documentação feita para o teste **Hubert**
 
 [**Link do vídeo completo sobre a documentação do projeto**](https://i.imgur.com/Gw3k3wl.gif)
 
 ---
 
 ## :hammer: Testes
+
+Para a confiabilidade das funcionalidades, foi desenvolvido testes unitarios em cada componente e página da aplicação, para isso foi utilizado o Jest como principal ferramenta de teste. A aplicação foi importante para verificar e prevenir futuros bugs no sistema.
+
+ <div align="center" >
+  <img src="https://i.imgur.com/pNRVuDF.png" width="560">
+</div>
+
+
+Segue o link abaixo para verificar os testes feitos com mais detalhes:
+
+[**Link dos testes unitários do projeto**](https://guilherme-vilela.notion.site/Hubert-Testes-Unit-rios-4762a39a583940608f337a5b54a5ec29)
 
 ---
 
