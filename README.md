@@ -82,6 +82,16 @@ Assim, nesse projeto é possível:
 
 ## :book: Documentação
 
+ Para este teste foi utilizado a documentação pelo Storybook para facilitar a visualização dos componentes totalmente separados dos outros e do próprio código, porém mantendo estilos e animações CSS. Além disso é possivel observar todas as propriedades que deverão ser passadas ou não, para aquele componente funcionar.
+ 
+ <div align="center" >
+  <img src="https://i.imgur.com/w9sTviZ.png" width="560">
+</div>
+
+Segue abaixo o vídeo completo da documentação feita para o teste *Hubert*
+
+[**Link do vídeo completo sobre a documentação do projeto**](https://i.imgur.com/Gw3k3wl.gif)
+
 ---
 
 ## :hammer: Testes
