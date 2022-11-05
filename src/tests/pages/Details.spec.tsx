@@ -16,7 +16,7 @@ jest.mock("react-router-dom", () => ({
   useLocation: () => mockedLocation,
 }));
 
-describe("Table component", () => {
+describe("Detail page", () => {
   it("Should be able the component render correctly ", () => {
     render(
       <ThemeProvider theme={theme}>

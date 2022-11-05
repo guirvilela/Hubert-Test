@@ -24,7 +24,7 @@ jest.mock("react-router-dom", () => ({
   useNavigate: () => mockedNavigator,
 }));
 
-describe("Table component", () => {
+describe("Home Page", () => {
   it("Should be able the component render correctly ", async () => {
     render(
       <ThemeProvider theme={theme}>
