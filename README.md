@@ -11,6 +11,7 @@ O projeto **Hubert** é uma aplicação web com o propósito de listar os princi
   <a href="#interrobang-motivo">Motivo</a>&nbsp;|&nbsp;
   <a href="#book-documentação">Documentação</a>&nbsp;|&nbsp;
   <a href="#hammer-testes">Testes</a>&nbsp;|&nbsp;
+  <a href="#clock1-scrum">Scrum</a>&nbsp;|&nbsp;
   <a href="#seedling-requisitos-mínimos">Requisitos</a>&nbsp;|&nbsp;
   <a href="#rocket-principais-tecnologias-utilizadas">Tecnologias</a>&nbsp;|&nbsp;
   <a href="#package-como-baixar-e-executar-o-projeto">Baixar e Executar</a>&nbsp;|&nbsp;
@@ -108,6 +109,16 @@ Para a confiabilidade das funcionalidades, foi desenvolvido testes unitarios em 
 Segue o link abaixo para verificar os testes feitos com mais detalhes:
 
 [**Link dos testes unitários do projeto**](https://guilherme-vilela.notion.site/Hubert-Testes-Unit-rios-4762a39a583940608f337a5b54a5ec29)
+
+---
+
+## :clock1: Scrum
+
+Para organizar as tarefas mais importantes a serem feitas e determinação do tempo de cada atividade, foi utilizado o Scrum.
+
+<div align="center" >
+  <img src="https://i.imgur.com/9tZDjFk.png" width="560">
+</div>
 
 ---
 
