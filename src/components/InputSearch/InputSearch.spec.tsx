@@ -16,7 +16,7 @@ describe("InputSearch component", () => {
     expect(screen).toBeTruthy();
   });
 
-  it("Should be able appear the value when write on field", () => {
+  it("Should be able save the value when write on field", () => {
     render(
       <ThemeProvider theme={theme}>
         <InputSearch />

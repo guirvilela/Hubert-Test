@@ -34,7 +34,7 @@ describe("Home Page", () => {
     expect(screen.getByText("Limpar busca")).toBeInTheDocument();
   });
 
-  it("Should be able filter list by product name", () => {
+  it("Should be able to filter table items by product name", () => {
     render(
       <ThemeProvider theme={theme}>
         <Home />

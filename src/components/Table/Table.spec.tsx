@@ -22,7 +22,7 @@ describe("Table component", () => {
     expect(screen).toBeTruthy();
   });
 
-  it("Should be able appear header title table", () => {
+  it("Should be able appear header title row", () => {
     render(
       <ThemeProvider theme={theme}>
         <Table data={exampleProduct} />
@@ -37,7 +37,7 @@ describe("Table component", () => {
     expect(screen.getByText("Preço")).toBeInTheDocument();
   });
 
-  it("Should be able to get the data correctly past in props ", () => {
+  it("Should be able to get the data correctly  pass product props ", () => {
     render(
       <ThemeProvider theme={theme}>
         <Table data={exampleProduct} />
