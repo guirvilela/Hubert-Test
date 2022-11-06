@@ -28,4 +28,8 @@ export const ProductTable = styled.div`
   background: ${({ theme }) => theme.colors.shade};
   margin-top: 27px;
   overflow: auto;
+
+  @media (max-width: 430px) {
+    padding: 16px 20px;
+  }
 `;
