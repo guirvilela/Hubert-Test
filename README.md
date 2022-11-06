@@ -22,7 +22,7 @@ O projeto **Hubert** é uma aplicação web com o propósito de listar os princi
 
 </div>
 
-- [**Link do vídeo completo sobre o projeto**](https://i.imgur.com/cveG3OY.gif)
+- [**Link do vídeo completo sobre o projeto**](https://i.imgur.com/5tshQRw.mp4)
 
 ---
 
@@ -53,7 +53,7 @@ Além disso,para a construção dessa aplicação foi utilizado os seguintes con
 - **Página Inicial**:
 
 <div align="center" >
-  <img src="https://i.imgur.com/vEB4DlL.png" width="550">
+  <img src="https://i.imgur.com/zfJjZFw.png" width="550">
 </div>
 
 ---
@@ -74,11 +74,12 @@ das telas, testes unitários, componentes organizados, HTML semântico e recurso
 Assim, nesse projeto é possível:
 
 1. Verificar todos os produtos disponíveis através de uma tabela;
-2. Visualizar animações CSS, como spinner de Loading;
-3. Filtrar a tabela pelo nome do produto;
-4. Limpar filtro para trazer todos os dados novamente;
-5. Navegar entre as as telas com uma animação suave de navegação;
-6. Ver detalhadamente as especificações do produto;
+2. Navegar entre os produtos através da paginação;
+3. Visualizar animações CSS, como spinner de Loading;
+4. Filtrar a tabela pelo nome do produto;
+5. Limpar filtro para trazer todos os dados novamente;
+6. Navegar entre as as telas com uma animação suave de navegação;
+7. Ver detalhadamente as especificações do produto;
 
 ---
 
@@ -87,13 +88,13 @@ Assim, nesse projeto é possível:
 Para este teste foi utilizado a documentação pelo Storybook para facilitar a visualização dos componentes totalmente separados dos outros e do próprio código, porém mantendo estilos e animações CSS. Além disso é possivel observar todas as propriedades que deverão ser passadas ou não, para aquele componente funcionar.
  
  <div align="center" >
-  <img src="https://i.imgur.com/w9sTviZ.png" width="560">
+  <img src="https://i.imgur.com/viatlP1.png" width="560">
 </div>
 
 ---
 Segue abaixo o vídeo completo da documentação feita para o teste **Hubert**
 
-[**Link do vídeo completo sobre a documentação do projeto**](https://i.imgur.com/Gw3k3wl.gif)
+[**Link do vídeo completo sobre a documentação do projeto**](https://i.imgur.com/IKMFdFR.mp4)
 
 ---
 
@@ -102,7 +103,7 @@ Segue abaixo o vídeo completo da documentação feita para o teste **Hubert**
 Para a confiabilidade das funcionalidades, foi desenvolvido testes unitarios em cada componente e página da aplicação, para isso foi utilizado o Jest como principal ferramenta de teste. A aplicação foi importante para verificar e prevenir futuros bugs no sistema.
 
  <div align="center" >
-  <img src="https://i.imgur.com/pNRVuDF.png" width="560">
+  <img src="https://i.imgur.com/EelNCxO.png" width="560">
 </div>
 
 
@@ -209,13 +210,13 @@ A experiência de desenvolver o teste para a Hubert foi muito interessante e des
 
 Para dar início ao projeto, escolhi utilizar o framework React por já estar familiarizado com a ferramenta, além de saber o que se é oferecido por ela e toda a estrutura de desenvolvimento de um projeto utilizando a mesma. Também preferi optar pelo Styled Components como pré-processador de estilização devido a manipulação de propriedades para o CSS e a organização que ele consegue trazer para o HTML, em que conto com o CamelCase, para organizar tanto nome de pastas e componentes, e tags estilizadas.   
 
-Ao executar o que foi indicado, optei primeiramente em observar o layout enviado e separar as cores, fontes, seus tamanhos e espessuras, para então passar para o código em forma de Tema global. Visando manter o padrão da aplicação, configuro as cores e fontes em variáveis, que serão aplicadas em todo o projeto, pois, caso algum dia uma nova configuração seja feita, a mudança no código ocorrerá apenas em uma variável que se aplica em todo o projeto, otimizando assim a padronização do código e a sua organização. Finalizada essa etapa de estilização, o foco se torna fazer todos os componentes da aplicação e documentá-los simultaneamente, já configurando futuras funcionalidades.Em seguida, desenvolvo as páginas principais em que serão utilizadas os componentes já configurados anteriormente e separo algumas lógicas que poderão ser utilizadas pelo projeto, como as requisições api, formatação de moeda e dados para teste. Com todas as páginas finalizadas, a fase de testes é iniciada, utilizando o Jest, e a opção coverage para verificar se todos os componentes foram validados.  
+Ao executar o que foi indicado, optei primeiramente em observar o layout enviado e separar as cores, fontes, seus tamanhos e espessuras, para então passar para o código em forma de Tema global. Visando manter o padrão da aplicação, configuro as cores e fontes em variáveis, que serão aplicadas em todo o projeto, pois, caso algum dia uma nova configuração seja feita, a mudança no código ocorrerá apenas em uma variável que se aplica em todo o projeto, otimizando assim a padronização do código e a sua organização. Finalizada essa etapa de estilização, o foco se torna fazer todos os componentes da aplicação e documentá-los simultaneamente, já configurando futuras funcionalidades.Em seguida, desenvolvo as páginas principais em que serão utilizadas os componentes já configurados anteriormente e separo algumas lógicas que poderão ser utilizadas pelo projeto, como as requisições api, formatação de moeda e dados para teste. Além disso, implementei uma paginação na tabela, afim de que haja uma visualização mais simples pelo usuário, para isso executei a lógica com javascript e exportei as funcionalidades pelos hooks. Com todas as páginas finalizadas, a fase de testes é iniciada, utilizando o Jest, e a opção coverage para verificar se todos os componentes foram validados. 
 
 Nas etapas de teste e aplicação do tema global apresentei algumas dificuldades. Na estilização não estava conseguindo fazer a tipagem correta dos objetos, cores e fontes. Além de não conseguir testar se os dados estavam sendo carregados corretamente na tabela. Desse modo, pesquisei sobre os assuntos e consegui sanar as minhas dúvidas, solucionando os problemas.  
 
-Uma das funcionalidades da aplicação é colocar na tabela todos os produtos que foram retornados pela api, para fazer a conexão entre front-end e back-end foi utilizado o Axios, além disso separei a requisição numa pasta chamada "service" na qual apresenta uma função assíncrona que apenas retorna os dados da api, ou um erro. Dentro do arquivo da home foi executada a função e o retorno salvo em um state chamado "products", além disso foi criado um componente "table" que espera a passagem de uma propriedade chamada "data", esperando um array de produtos, para assim renderizar a tabela com os dados carregados. Dentro do projeto também foram feitas animações CSS, como spinner de carregamento, navegação entre as telas suavizadas utilizando o framer-motion, hover suave, e focus para alterar a borda do input ao selecioná-lo.
+Uma das funcionalidades da aplicação é colocar na tabela todos os produtos que foram retornados pela api e para fazer esasa conexão entre front-end e back-end utilizei o Axios. Além disso, separei a requisição numa pasta chamada "hooks", que ao chamar o hook "useProducts" capta as principais funcionalidades para a modificação de um produto, como funções e state. Dentro do arquivo da home executei a função "getAllProducts" e o resultado é enviado para o hook "usePagination", que espera o array de produtos para assim criar a lógica da paginação. Também criei um componente "table", que espera a passagem de uma propriedade chamada "data", sendo o array de produtos, para assim renderizar a tabela com os dados carregados. Dentro do projeto também foram feitas animações CSS, como spinner de carregamento, navegação entre as telas suavizadas utilizando o framer-motion, hover suave, e focus para alterar a borda do input ao selecioná-lo.
 
-Com isso, após selecionar o input, é possível filtrar os dados da tabela através do nome do produto, para isso criei um state "updateProducts" que copia o array de produtos, e pelo o que é escrito no campo, faz um filtro trazendo um objeto na qual o nome do produto é igual ao texto digitado, já renderizando em tela se foi encontrado, caso não seja, mostra um texto "Nenhum produto encontrado". Logo após o filtro, é possivel limpar a busca que, ao clicar, o array de produtos retorna ao valor inicial de "updateProducts", e limpa o campo de texto.
+Após selecionar o input, é possível filtrar os dados da tabela através do nome do produto, para isso dentro do hook "useProducts" exporta-se um state "prevProducts", que é a cópia do array de produtos, e pelo o que é escrito no campo, faz um filtro trazendo um objeto que possui o nome do produto igual ao texto digitado, já renderizando em tela o que se foi encontrado e caso contrário, mostra-se o texto "Nenhum produto encontrado". Logo após o filtro é possivel limpar a busca que, ao clicar no botão, o array de produtos retorna ao valor inicial, como também a paginação volta para a primeira página e limpa o campo de texto.
 
 Dentro da tabela, um dos requisitos era que, ao clicar em algum dos produtos, seja redirecionado para uma página na qual será exibido as informações do mesmo mais detalhado. Para isso, criei uma página chamada "Details" e ela espera como parâmetro de rota os dados do produto selecionado, sendo que, quando clica em algum dado da tabela seja redirecionado para a url: /details/${id do produto selecionado}, e como parâmetro, os dados do produto. 
 
