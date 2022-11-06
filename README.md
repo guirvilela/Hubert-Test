@@ -184,10 +184,10 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias
   ```
   - Caso a documentação não abra corretamente, tente o seguinte comando:
   
-  -Windows
+  -Windows (PowerShell)
   
   ```bash
-      set NODE_OPTIONS=--openssl-legacy-provider
+      $env:NODE_OPTIONS="--openssl-legacy-provider"
   ```
   -Linux
    ```bash
