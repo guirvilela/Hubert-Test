@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, PaginationButton } from "./styles";
 
-interface IPagination {
+export interface IPagination {
   pages: number;
   setActualPage: (page: number) => void;
   currentPage: number;
@@ -12,7 +12,6 @@ export const Pagination: React.FC<IPagination> = ({
   setActualPage,
   currentPage,
 }) => {
-  console.log(currentPage);
   return (
     <Container>
       {Array.from(Array(pages), (_, index) => (
