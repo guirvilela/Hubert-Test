@@ -16,13 +16,16 @@ import {
 
 export const Home: React.FC = () => {
   const [search, setSearch] = useState<string>("");
+  const [loading, setLoading] = useState<boolean>(false);
 
   const { getAllProducts, products, prevProducts } = useProducts();
   const { pages, currentItens, setCurrentItens, setCurrentPage, currentPage } =
     usePagination(products);
 
   useEffect(() => {
+    setLoading(true);
     getAllProducts();
+    setLoading(false);
   }, []);
 
   const handleSearchTable = (text: string) => {
@@ -43,9 +46,11 @@ export const Home: React.FC = () => {
   };
 
   const handleClearSearch = () => {
+    setLoading(true);
     getAllProducts();
     setSearch("");
     setCurrentPage(0);
+    setLoading(false);
   };
 
   const loadTableConditions = () => {
@@ -73,9 +78,13 @@ export const Home: React.FC = () => {
         <ClearSearch onClick={handleClearSearch}>Limpar busca</ClearSearch>
       </SearchContent>
 
-      <ProductTable>{loadTableConditions()}</ProductTable>
+      {!loading ? (
+        <ProductTable>{loadTableConditions()}</ProductTable>
+      ) : (
+        <Loading />
+      )}
 
-      {!search && (
+      {!search && !loading && (
         <Pagination
           pages={pages}
           setActualPage={setCurrentPage}

@@ -25,14 +25,14 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>34/34</span>
+                <span class='fraction'>39/39</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">92.3% </span>
+                <span class="strong">87.5% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>12/13</span>
+                <span class='fraction'>14/16</span>
             </div>
         
             
@@ -46,7 +46,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>33/33</span>
+                <span class='fraction'>38/38</span>
             </div>
         
             
@@ -150,7 +150,16 @@
 <a name='L85'></a><a href='#L85'>85</a>
 <a name='L86'></a><a href='#L86'>86</a>
 <a name='L87'></a><a href='#L87'>87</a>
-<a name='L88'></a><a href='#L88'>88</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<a name='L88'></a><a href='#L88'>88</a>
+<a name='L89'></a><a href='#L89'>89</a>
+<a name='L90'></a><a href='#L90'>90</a>
+<a name='L91'></a><a href='#L91'>91</a>
+<a name='L92'></a><a href='#L92'>92</a>
+<a name='L93'></a><a href='#L93'>93</a>
+<a name='L94'></a><a href='#L94'>94</a>
+<a name='L95'></a><a href='#L95'>95</a>
+<a name='L96'></a><a href='#L96'>96</a>
+<a name='L97'></a><a href='#L97'>97</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -168,12 +177,15 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">15x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">15x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">15x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">15x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">15x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -195,6 +207,8 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">15x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -237,6 +251,10 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React, { useEffect, useState } from "react";
 import { HistoryPages } from "../../components/HistoryPages";
 import { InputSearch } from "../../components/InputSearch";
@@ -255,13 +273,16 @@ import {
 &nbsp;
 export const Home: React.FC = () =&gt; {
   const [search, setSearch] = useState&lt;string&gt;("");
+  const [loading, setLoading] = useState&lt;boolean&gt;(false);
 &nbsp;
   const { getAllProducts, products, prevProducts } = useProducts();
   const { pages, currentItens, setCurrentItens, setCurrentPage, currentPage } =
     usePagination(products);
 &nbsp;
   useEffect(() =&gt; {
+    setLoading(true);
     getAllProducts();
+    setLoading(false);
   }, []);
 &nbsp;
   const handleSearchTable = (text: string) =&gt; {
@@ -282,9 +303,11 @@ export const Home: React.FC = () =&gt; {
   };
 &nbsp;
   const handleClearSearch = () =&gt; {
+    setLoading(true);
     getAllProducts();
     setSearch("");
     setCurrentPage(0);
+    setLoading(false);
   };
 &nbsp;
   const loadTableConditions = () =&gt; {
@@ -312,9 +335,13 @@ export const Home: React.FC = () =&gt; {
         &lt;ClearSearch onClick={handleClearSearch}&gt;Limpar busca&lt;/ClearSearch&gt;
       &lt;/SearchContent&gt;
 &nbsp;
-      &lt;ProductTable&gt;{loadTableConditions()}&lt;/ProductTable&gt;
+      {!loading ? (
+        &lt;ProductTable&gt;{loadTableConditions()}&lt;/ProductTable&gt;
+      ) : (
+<span class="branch-1 cbranch-no" title="branch not covered" >        &lt;Loading /&gt;</span>
+      )}
 &nbsp;
-      {!search &amp;&amp; (
+      {!search &amp;&amp; !loading &amp;&amp; (
         &lt;Pagination
           pages={pages}
           setActualPage={setCurrentPage}
@@ -331,7 +358,7 @@ export const Home: React.FC = () =&gt; {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2022-11-06T17:08:50.798Z
+                at 2022-11-06T18:43:30.406Z
             </div>
         <script src="../../prettify.js"></script>
         <script>
