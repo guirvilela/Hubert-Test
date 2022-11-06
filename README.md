@@ -182,6 +182,17 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias
   ```bash
       yarn storybook
   ```
+  - Caso a documentação não abra corretamente, tente o seguinte comando:
+  -Windows
+  
+  ```bash
+      set NODE_OPTIONS=--openssl-legacy-provider
+  ```
+  -Linux
+   ```bash
+      export NODE_OPTIONS=--openssl-legacy-provider
+  ```
+  
 
 - Testes: 
   - Para rodar todos os testes da aplicação, execute o seguindo comando dentro do projeto:
