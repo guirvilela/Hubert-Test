@@ -15,6 +15,10 @@ export const HeaderCells = styled.th`
   padding: 16px;
   font: ${({ theme }) => theme.fonts.nunito.small_600};
   color: ${({ theme }) => theme.colors.blue_800};
+
+  @media (max-width: 430px) {
+    font: ${({ theme }) => theme.fonts.nunito.extraSmall_600};
+  }
 `;
 
 export const BodyTable = styled.tr`
@@ -32,6 +36,10 @@ export const BodyCells = styled.td`
   text-align: center;
   font: ${({ theme }) => theme.fonts.nunito.small_600};
   color: ${({ theme }) => theme.colors.blue_800};
+
+  @media (max-width: 430px) {
+    font: ${({ theme }) => theme.fonts.nunito.extraSmall_600};
+  }
 `;
 
 export const Dots = styled(BiDotsHorizontalRounded).attrs({
