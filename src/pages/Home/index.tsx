@@ -3,7 +3,10 @@ import { IProduct } from "../../@types/products";
 import { HistoryPages } from "../../components/HistoryPages";
 import { InputSearch } from "../../components/InputSearch";
 import { Loading } from "../../components/Loading";
+import { Pagination } from "../../components/Pagination";
 import { Table } from "../../components/Table";
+import { usePagination } from "../../hooks/usePagination";
+import { useProducts } from "../../hooks/useProducts";
 import { loadAllProductsTable } from "../../services/products/LoadAllProductsTable";
 import { Content } from "../../shared/AnimatedContainer";
 import {
@@ -14,51 +17,47 @@ import {
 } from "./styles";
 
 export const Home: React.FC = () => {
-  const [products, setProducts] = useState<IProduct[]>([]);
-  const [updateProducts, setUpdateProducts] = useState<IProduct[]>([]);
   const [search, setSearch] = useState<string>("");
 
-  useEffect(() => {
-    loadAllProducts();
-  }, []);
+  const { getAllProducts, products, prevProducts } = useProducts();
+  const { pages, currentItens, setCurrentItens, setCurrentPage, currentPage } =
+    usePagination(products);
 
-  const loadAllProducts = async () => {
-    const data = await loadAllProductsTable();
-    /* istanbul ignore next */
-    setProducts(data);
-    setUpdateProducts(data);
-  };
+  useEffect(() => {
+    getAllProducts();
+  }, []);
 
   const handleSearchTable = (text: string) => {
     setSearch(text);
 
     if (text) {
       /* istanbul ignore next */
-      const filtered = updateProducts.filter(({ product }) =>
+      const filtered = prevProducts.filter(({ product }) =>
         product.toLowerCase().includes(text.toLowerCase())
       );
 
       if (filtered) {
-        setProducts(filtered);
+        setCurrentItens(filtered);
       }
     } else {
-      loadAllProducts();
+      getAllProducts();
     }
   };
 
   const handleClearSearch = () => {
-    loadAllProducts();
+    getAllProducts();
     setSearch("");
+    setCurrentPage(0);
   };
 
   const loadTableConditions = () => {
-    if (products.length === 0 && !search) {
+    if (currentItens.length === 0 && !search) {
       return <Loading />;
-    } else if (products.length === 0 && search) {
+    } else if (currentItens.length === 0 && search) {
       return <NotFoundProduct>Nenhum produto encontrado!</NotFoundProduct>;
     } else {
       /* istanbul ignore next */
-      return <Table data={products} />;
+      return <Table data={currentItens} />;
     }
   };
 
@@ -77,6 +76,14 @@ export const Home: React.FC = () => {
       </SearchContent>
 
       <ProductTable>{loadTableConditions()}</ProductTable>
+
+      {!search && (
+        <Pagination
+          pages={pages}
+          setActualPage={setCurrentPage}
+          currentPage={currentPage}
+        />
+      )}
     </Content>
   );
 };
