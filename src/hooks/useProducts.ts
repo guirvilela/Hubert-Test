@@ -9,7 +9,9 @@ export const useProducts = () => {
   const getAllProducts = async () => {
     try {
       const response = await api.get("/products");
+      /* istanbul ignore next */
       setProducts(response.data);
+      /* istanbul ignore next */
       setPrevProducts(response.data);
     } catch (error) {
       return [];

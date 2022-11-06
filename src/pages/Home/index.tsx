@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { IProduct } from "../../@types/products";
 import { HistoryPages } from "../../components/HistoryPages";
 import { InputSearch } from "../../components/InputSearch";
 import { Loading } from "../../components/Loading";
@@ -7,7 +6,6 @@ import { Pagination } from "../../components/Pagination";
 import { Table } from "../../components/Table";
 import { usePagination } from "../../hooks/usePagination";
 import { useProducts } from "../../hooks/useProducts";
-import { loadAllProductsTable } from "../../services/products/LoadAllProductsTable";
 import { Content } from "../../shared/AnimatedContainer";
 import {
   ClearSearch,
