@@ -205,7 +205,7 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias
 
 ## :thought_balloon: Depoimento
 
-A experiência de desenvolver o teste para a Hubert foi muito interessante e desafiadora para mim, apesar de me sentir confiante ao decorrer da prática, pois o exercício propunha a utilização do Javascript e React.JS, linguagem de progamação e framework dos quais já possuo experiência por ter as utilizados em meu último projeto. Também fiquei muito animado com a oportunidade de poder participar do processo seletivo, por estar dentro do objetivo de carreira que almejo atualmente.
+A experiência de desenvolver o teste para a Hubert foi muito interessante e desafiadora para mim, apesar de me sentir confiante ao decorrer da prática, pois o exercício propunha a utilização do Javascript e React.JS, linguagem de progamação e framework que já possuo experiência por ter as utilizado em meu último projeto. Também fiquei muito animado com a oportunidade de poder participar do processo seletivo, por estar dentro do objetivo de carreira que almejo atualmente.
 
 Para dar início ao projeto, escolhi utilizar o framework React por já estar familiarizado com a ferramenta, além de saber o que se é oferecido por ela e toda a estrutura de desenvolvimento de um projeto utilizando a mesma. Também preferi optar pelo Styled Components como pré-processador de estilização devido a manipulação de propriedades para o CSS e a organização que ele consegue trazer para o HTML, em que conto com o CamelCase, para organizar tanto nome de pastas e componentes, e tags estilizadas.   
 
