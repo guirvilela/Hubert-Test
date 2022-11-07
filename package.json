@@ -1,6 +1,6 @@
 {
   "name": "hubert",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "homepage": "https://guirvilela.github.io/Hubert-Test/",
@@ -10,12 +10,14 @@
     "preview": "vite preview",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "test": "jest --coverage"
+    "test": "jest --coverage",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@types/styled-components": "^5.1.26",
     "axios": "^1.1.3",
     "framer-motion": "^7.6.4",
+    "gh-pages": "^4.0.0",
     "jest-mock-axios": "^4.7.0-beta",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
