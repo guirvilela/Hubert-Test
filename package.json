@@ -1,9 +1,9 @@
 {
+  "homepage": "http://guirvilela.github.io/Hubert-Test",
   "name": "hubert",
   "private": false,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://guirvilela.github.io/Hubert-Test/",
   "scripts": {
     "start": "node server.js",
     "dev": "vite",
@@ -12,7 +12,8 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "test": "jest ",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build"
   },
   "dependencies": {
     "@types/styled-components": "^5.1.26",
