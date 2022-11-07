@@ -11,7 +11,8 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "test": "jest --coverage",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "publish": "subpath-as-branch --path dist --branch gh-pages"
   },
   "dependencies": {
     "@types/styled-components": "^5.1.26",
