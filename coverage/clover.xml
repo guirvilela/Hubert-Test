@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1667760210427" clover="3.2.0">
-  <project timestamp="1667760210428" name="All files">
+<coverage generated="1667760691522" clover="3.2.0">
+  <project timestamp="1667760691522" name="All files">
     <metrics statements="201" coveredstatements="201" conditionals="22" coveredconditionals="20" methods="65" coveredmethods="65" elements="288" coveredelements="286" complexity="0" loc="201" ncloc="201" packages="15" files="28" classes="28"/>
     <package name="components.ButtonBack">
       <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
-      <file name="index.tsx" path="/home/oem/Desktop/Projects/TestHubert/Hubert-Test/src/components/ButtonBack/index.tsx">
+      <file name="index.tsx" path="/home/oem/Desktop/Projects/testHubert/Hubert-Test/src/components/ButtonBack/index.tsx">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="2" count="2" type="stmt"/>
         <line num="8" count="2" type="stmt"/>
         <line num="9" count="5" type="stmt"/>
       </file>
-      <file name="styles.ts" path="/home/oem/Desktop/Projects/TestHubert/Hubert-Test/src/components/ButtonBack/styles.ts">
+      <file name="styles.ts" path="/home/oem/Desktop/Projects/testHubert/Hubert-Test/src/components/ButtonBack/styles.ts">
         <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
         <line num="1" count="2" type="stmt"/>
         <line num="3" count="2" type="stmt"/>
@@ -21,7 +21,7 @@
     </package>
     <package name="components.HistoryPages">
       <metrics statements="17" coveredstatements="17" conditionals="4" coveredconditionals="4" methods="7" coveredmethods="7"/>
-      <file name="index.tsx" path="/home/oem/Desktop/Projects/TestHubert/Hubert-Test/src/components/HistoryPages/index.tsx">
+      <file name="index.tsx" path="/home/oem/Desktop/Projects/testHubert/Hubert-Test/src/components/HistoryPages/index.tsx">
         <metrics statements="7" coveredstatements="7" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
         <line num="2" count="3" type="stmt"/>
         <line num="3" count="3" type="stmt"/>
@@ -31,7 +31,7 @@
         <line num="13" count="1" type="stmt"/>
         <line num="16" count="21" type="stmt"/>
       </file>
-      <file name="styles.ts" path="/home/oem/Desktop/Projects/TestHubert/Hubert-Test/src/components/HistoryPages/styles.ts">
+      <file name="styles.ts" path="/home/oem/Desktop/Projects/testHubert/Hubert-Test/src/components/HistoryPages/styles.ts">
         <metrics statements="10" coveredstatements="10" conditionals="2" coveredconditionals="2" methods="5" coveredmethods="5"/>
         <line num="1" count="3" type="stmt"/>
         <line num="2" count="3" type="stmt"/>
@@ -47,7 +47,7 @@
     </package>
     <package name="components.InputSearch">
       <metrics statements="14" coveredstatements="14" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="6"/>
-      <file name="index.tsx" path="/home/oem/Desktop/Projects/TestHubert/Hubert-Test/src/components/InputSearch/index.tsx">
+      <file name="index.tsx" path="/home/oem/Desktop/Projects/testHubert/Hubert-Test/src/components/InputSearch/index.tsx">
         <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="2" count="2" type="stmt"/>
         <line num="3" count="2" type="stmt"/>
@@ -55,7 +55,7 @@
         <line num="6" count="2" type="stmt"/>
         <line num="9" count="16" type="stmt"/>
       </file>
-      <file name="styles.ts" path="/home/oem/Desktop/Projects/TestHubert/Hubert-Test/src/components/InputSearch/styles.ts">
+      <file name="styles.ts" path="/home/oem/Desktop/Projects/testHubert/Hubert-Test/src/components/InputSearch/styles.ts">
         <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="5"/>
         <line num="1" count="2" type="stmt"/>
         <line num="3" count="2" type="stmt"/>
@@ -70,13 +70,13 @@
     </package>
     <package name="components.Loading">
       <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-      <file name="index.tsx" path="/home/oem/Desktop/Projects/TestHubert/Hubert-Test/src/components/Loading/index.tsx">
+      <file name="index.tsx" path="/home/oem/Desktop/Projects/testHubert/Hubert-Test/src/components/Loading/index.tsx">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="2" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
         <line num="5" count="11" type="stmt"/>
       </file>
-      <file name="styles.ts" path="/home/oem/Desktop/Projects/TestHubert/Hubert-Test/src/components/Loading/styles.ts">
+      <file name="styles.ts" path="/home/oem/Desktop/Projects/testHubert/Hubert-Test/src/components/Loading/styles.ts">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -85,7 +85,7 @@
     </package>
     <package name="components.Pagination">
       <metrics statements="12" coveredstatements="12" conditionals="2" coveredconditionals="2" methods="7" coveredmethods="7"/>
-      <file name="index.tsx" path="/home/oem/Desktop/Projects/TestHubert/Hubert-Test/src/components/Pagination/index.tsx">
+      <file name="index.tsx" path="/home/oem/Desktop/Projects/testHubert/Hubert-Test/src/components/Pagination/index.tsx">
         <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
         <line num="2" count="2" type="stmt"/>
         <line num="10" count="2" type="stmt"/>
@@ -93,7 +93,7 @@
         <line num="18" count="10" type="stmt"/>
         <line num="21" count="1" type="stmt"/>
       </file>
-      <file name="styles.ts" path="/home/oem/Desktop/Projects/TestHubert/Hubert-Test/src/components/Pagination/styles.ts">
+      <file name="styles.ts" path="/home/oem/Desktop/Projects/testHubert/Hubert-Test/src/components/Pagination/styles.ts">
         <metrics statements="7" coveredstatements="7" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="4"/>
         <line num="1" count="2" type="stmt"/>
         <line num="7" count="2" type="stmt"/>
@@ -106,13 +106,13 @@
     </package>
     <package name="components.ProductDetailText">
       <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
-      <file name="index.tsx" path="/home/oem/Desktop/Projects/TestHubert/Hubert-Test/src/components/ProductDetailText/index.tsx">
+      <file name="index.tsx" path="/home/oem/Desktop/Projects/testHubert/Hubert-Test/src/components/ProductDetailText/index.tsx">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="2" count="2" type="stmt"/>
         <line num="9" count="2" type="stmt"/>
         <line num="13" count="23" type="stmt"/>
       </file>
-      <file name="styles.ts" path="/home/oem/Desktop/Projects/TestHubert/Hubert-Test/src/components/ProductDetailText/styles.ts">
+      <file name="styles.ts" path="/home/oem/Desktop/Projects/testHubert/Hubert-Test/src/components/ProductDetailText/styles.ts">
         <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
         <line num="1" count="2" type="stmt"/>
         <line num="3" count="2" type="stmt"/>
@@ -123,7 +123,7 @@
     </package>
     <package name="components.Table">
       <metrics statements="28" coveredstatements="28" conditionals="0" coveredconditionals="0" methods="14" coveredmethods="14"/>
-      <file name="index.tsx" path="/home/oem/Desktop/Projects/TestHubert/Hubert-Test/src/components/Table/index.tsx">
+      <file name="index.tsx" path="/home/oem/Desktop/Projects/testHubert/Hubert-Test/src/components/Table/index.tsx">
         <metrics statements="10" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
         <line num="2" count="2" type="stmt"/>
         <line num="4" count="2" type="stmt"/>
@@ -136,7 +136,7 @@
         <line num="26" count="10" type="stmt"/>
         <line num="29" count="1" type="stmt"/>
       </file>
-      <file name="styles.ts" path="/home/oem/Desktop/Projects/TestHubert/Hubert-Test/src/components/Table/styles.ts">
+      <file name="styles.ts" path="/home/oem/Desktop/Projects/testHubert/Hubert-Test/src/components/Table/styles.ts">
         <metrics statements="18" coveredstatements="18" conditionals="0" coveredconditionals="0" methods="10" coveredmethods="10"/>
         <line num="1" count="2" type="stmt"/>
         <line num="2" count="2" type="stmt"/>
@@ -160,7 +160,7 @@
     </package>
     <package name="hooks">
       <metrics statements="21" coveredstatements="21" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
-      <file name="usePagination.ts" path="/home/oem/Desktop/Projects/TestHubert/Hubert-Test/src/hooks/usePagination.ts">
+      <file name="usePagination.ts" path="/home/oem/Desktop/Projects/testHubert/Hubert-Test/src/hooks/usePagination.ts">
         <metrics statements="11" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
         <line num="1" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
@@ -174,7 +174,7 @@
         <line num="15" count="5" type="stmt"/>
         <line num="18" count="15" type="stmt"/>
       </file>
-      <file name="useProducts.ts" path="/home/oem/Desktop/Projects/TestHubert/Hubert-Test/src/hooks/useProducts.ts">
+      <file name="useProducts.ts" path="/home/oem/Desktop/Projects/testHubert/Hubert-Test/src/hooks/useProducts.ts">
         <metrics statements="10" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
         <line num="1" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -190,7 +190,7 @@
     </package>
     <package name="pages.Details">
       <metrics statements="24" coveredstatements="24" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="6"/>
-      <file name="index.tsx" path="/home/oem/Desktop/Projects/TestHubert/Hubert-Test/src/pages/Details/index.tsx">
+      <file name="index.tsx" path="/home/oem/Desktop/Projects/testHubert/Hubert-Test/src/pages/Details/index.tsx">
         <metrics statements="15" coveredstatements="15" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -208,7 +208,7 @@
         <line num="17" count="1" type="stmt"/>
         <line num="20" count="3" type="stmt"/>
       </file>
-      <file name="styles.ts" path="/home/oem/Desktop/Projects/TestHubert/Hubert-Test/src/pages/Details/styles.ts">
+      <file name="styles.ts" path="/home/oem/Desktop/Projects/testHubert/Hubert-Test/src/pages/Details/styles.ts">
         <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
         <line num="1" count="1" type="stmt"/>
         <line num="7" count="1" type="stmt"/>
@@ -223,7 +223,7 @@
     </package>
     <package name="pages.Home">
       <metrics statements="48" coveredstatements="48" conditionals="16" coveredconditionals="14" methods="11" coveredmethods="11"/>
-      <file name="index.tsx" path="/home/oem/Desktop/Projects/TestHubert/Hubert-Test/src/pages/Home/index.tsx">
+      <file name="index.tsx" path="/home/oem/Desktop/Projects/testHubert/Hubert-Test/src/pages/Home/index.tsx">
         <metrics statements="38" coveredstatements="38" conditionals="16" coveredconditionals="14" methods="6" coveredmethods="6"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -264,7 +264,7 @@
         <line num="67" count="15" type="stmt"/>
         <line num="75" count="4" type="stmt"/>
       </file>
-      <file name="styles.ts" path="/home/oem/Desktop/Projects/TestHubert/Hubert-Test/src/pages/Home/styles.ts">
+      <file name="styles.ts" path="/home/oem/Desktop/Projects/testHubert/Hubert-Test/src/pages/Home/styles.ts">
         <metrics statements="10" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="5"/>
         <line num="1" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -280,29 +280,29 @@
     </package>
     <package name="services">
       <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="categories.ts" path="/home/oem/Desktop/Projects/TestHubert/Hubert-Test/src/services/categories.ts">
+      <file name="categories.ts" path="/home/oem/Desktop/Projects/testHubert/Hubert-Test/src/services/categories.ts">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="2" type="stmt"/>
       </file>
-      <file name="exampleProduct.ts" path="/home/oem/Desktop/Projects/TestHubert/Hubert-Test/src/services/exampleProduct.ts">
+      <file name="exampleProduct.ts" path="/home/oem/Desktop/Projects/testHubert/Hubert-Test/src/services/exampleProduct.ts">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="3" type="stmt"/>
         <line num="24" count="3" type="stmt"/>
       </file>
-      <file name="formatCurrency.ts" path="/home/oem/Desktop/Projects/TestHubert/Hubert-Test/src/services/formatCurrency.ts">
+      <file name="formatCurrency.ts" path="/home/oem/Desktop/Projects/testHubert/Hubert-Test/src/services/formatCurrency.ts">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="3" type="stmt"/>
       </file>
     </package>
     <package name="shared.AnimatedContainer">
       <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <file name="index.tsx" path="/home/oem/Desktop/Projects/TestHubert/Hubert-Test/src/shared/AnimatedContainer/index.tsx">
+      <file name="index.tsx" path="/home/oem/Desktop/Projects/testHubert/Hubert-Test/src/shared/AnimatedContainer/index.tsx">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="2" count="2" type="stmt"/>
         <line num="8" count="2" type="stmt"/>
         <line num="9" count="17" type="stmt"/>
       </file>
-      <file name="styles.ts" path="/home/oem/Desktop/Projects/TestHubert/Hubert-Test/src/shared/AnimatedContainer/styles.ts">
+      <file name="styles.ts" path="/home/oem/Desktop/Projects/testHubert/Hubert-Test/src/shared/AnimatedContainer/styles.ts">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="2" type="stmt"/>
         <line num="2" count="2" type="stmt"/>
@@ -311,7 +311,7 @@
     </package>
     <package name="theme">
       <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="index.ts" path="/home/oem/Desktop/Projects/TestHubert/Hubert-Test/src/theme/index.ts">
+      <file name="index.ts" path="/home/oem/Desktop/Projects/testHubert/Hubert-Test/src/theme/index.ts">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="8" type="stmt"/>
         <line num="2" count="8" type="stmt"/>
@@ -320,14 +320,14 @@
     </package>
     <package name="theme.colors">
       <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="index.ts" path="/home/oem/Desktop/Projects/TestHubert/Hubert-Test/src/theme/colors/index.ts">
+      <file name="index.ts" path="/home/oem/Desktop/Projects/testHubert/Hubert-Test/src/theme/colors/index.ts">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="8" type="stmt"/>
       </file>
     </package>
     <package name="theme.fonts">
       <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="index.ts" path="/home/oem/Desktop/Projects/TestHubert/Hubert-Test/src/theme/fonts/index.ts">
+      <file name="index.ts" path="/home/oem/Desktop/Projects/testHubert/Hubert-Test/src/theme/fonts/index.ts">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="8" type="stmt"/>
       </file>
