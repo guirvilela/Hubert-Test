@@ -42,6 +42,7 @@ Além disso,para a construção dessa aplicação foi utilizado os seguintes con
 - Javascript
 - Typescript;
 - Componentes reutilizáveis;
+- React Hooks
 - Axios;
 - Yarn;
 - Jest;
@@ -147,6 +148,7 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias
 - [Styled Components](https://www.styled-components.com/)
 - [Framer Motion](https://www.framer.com/motion/)
 - [Axios](https://axios-http.com/ptbr/docs/intro)
+- [React Hooks](https://reactjs.org/docs/hooks-intro.html)
 - [React-Icons](https://react-icons.github.io/react-icons/)
 - [Jest](https://jestjs.io/pt-BR/)
 - [Storybook](https://storybook.js.org/)
