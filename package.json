@@ -4,14 +4,13 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "start": "node server.js",
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "test": "jest",
-    "deploy": "gh-pages -d build",
-    "publish": "subpath-as-branch --path dist --branch gh-pages"
+    "test": "jest"
   },
   "dependencies": {
     "@types/styled-components": "^5.1.26",
