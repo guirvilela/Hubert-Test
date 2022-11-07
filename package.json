@@ -3,7 +3,7 @@
   "private": false,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://guirvilela.github.io/Hubert-Test/",
+  "homepage": ".",
   "scripts": {
     "start": "node server.js",
     "dev": "vite",
