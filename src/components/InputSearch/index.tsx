@@ -1,9 +1,9 @@
-import React, { HTMLProps } from "react";
+import React, { HTMLProps, InputHTMLAttributes } from "react";
 import { Container, Input, InputIcon } from "./styles";
 import { AiOutlineSearch } from "react-icons/ai";
 import theme from "../../theme";
 
-export const InputSearch: React.FC<HTMLProps<HTMLInputElement>> = ({
+export const InputSearch: React.FC<InputHTMLAttributes<HTMLInputElement>> = ({
   ...rest
 }) => {
   return (

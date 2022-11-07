@@ -1,7 +1,7 @@
-import React, { HTMLProps } from "react";
+import React, { ButtonHTMLAttributes, HTMLProps } from "react";
 import { Container } from "./styles";
 
-interface IButtonBack extends HTMLProps<HTMLButtonElement> {
+interface IButtonBack extends ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
 }
 

@@ -4,7 +4,7 @@ import { Home } from "../pages/Home";
 
 export const RoutesPages = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={window.location.pathname || ""}>
       <Routes>
         <Route element={<Home />} path="/" />
         <Route element={<Details />} path="/detalhes/:id" />

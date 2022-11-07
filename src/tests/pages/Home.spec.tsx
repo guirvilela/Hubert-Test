@@ -1,12 +1,7 @@
-import { fireEvent, render, screen, waitFor } from "@testing-library/react";
-import mock from "axios";
-import mockAxios from "jest-mock-axios";
-import React from "react";
+import { fireEvent, render, screen } from "@testing-library/react";
 import { ThemeProvider } from "styled-components";
 import { Home } from "../../pages/Home";
-import api from "../../services/api";
 import { exampleProduct } from "../../services/exampleProduct";
-import { loadAllProductsTable } from "../../services/products/LoadAllProductsTable";
 import theme from "../../theme";
 
 jest.mock("../../services/api", () => {
