@@ -9,7 +9,7 @@
     "preview": "vite preview",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "test": "jest --coverage",
+    "test": "jest",
     "deploy": "gh-pages -d build",
     "publish": "subpath-as-branch --path dist --branch gh-pages"
   },
